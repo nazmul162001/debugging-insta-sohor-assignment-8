@@ -89,11 +89,16 @@
                           How does javascript work?
                         </button>
                       </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">JavaScript is a single threaded and single concurrent programming language which means it can handle one task at a time or,
-                          in other words, a piece of code at a time. It's an heigh level interpreted programming language, and like most scripting languages, 
-                         it uses dynamic typing, where type safety is verified at the runtime.The source code is passed through a program called a compiler, 
-                         which translates it into bytecode that the machine understands and can execute.</div>
+                      <div style="background-color: #E8E8E8;" id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <img src="img/HowDoesJsWork.png" alt="" class="img-fluid">
+                          <p>
+                            JavaScript is a heigh level interpreted and single threaded programming language.
+                            which means it can handle one task at a time.
+                            When we write the javascript code firstly it goes to the browser.
+                            Then js engine converts it into a machine language to make understood for machine.
+                            After that line by line machine code is executed and eventually it gives the output to our computer.</p>
+                        </div>
                       </div>
                     </div>
                     <div class="accordion-item">
@@ -103,10 +108,10 @@
                         </button>
                       </h2>
                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Event loop is responsible for checking the call stack in the event queue
-                          also called as callback queue, if all the statements from the call stack
-                          have finished execution event loop will pop the statement
-                          from the event queue and push it to the call stack.</div>
+                        <div class="accordion-body">
+                          <img src="img/event-loop.png" alt="" class="fluid w-100 pb-2">
+                          <p>Javascript executes codes one peach of task at a time in the call Stack.But when an asynchronous task like as web api task is on call stack,it cannot be executed immediately and it is delivered to Web API Stack and further codes of call stack are executed. When it is time to execute to code of web API, it is headed to call back queue then delivered to call stack to execute further when it is time and executed and eventually asynchronous task execution is finished. In summery we can say that Event loop is responsible for checking the call stack in the event queue,also called as callback queue, if all the statements from the call stackhave finished execution event loop will pop the statementfrom even queue and push it to the call stack.</p>
+                        </div>
                       </div>
                     </div>
                     <div class="accordion-item">
@@ -119,20 +124,20 @@
                         <div class="accordion-body">
                           <h5 class="text-success">Local Storage</h5>
                           <ul>
-                            <li>Data is persisted when the browser session ends</li>
+                            <li>All Data is persisted when the browser session ends</li>
                             <li>It's not sessions based, need to be deleted via JS or manually</li>
                             <li>It allows storing data with no expiration date</li>
                             <li>Designed for storage that spans multiple windows and it lasts beyond the current session</li>
                           </ul>
                           <h5 class="text-success">Session Storage</h5>
                           <ul>
-                            <li>Data is cleared when the browser session ends</li>
+                            <li>All Data is cleared when the browser session ends</li>
 
-                            <li>It's session based and working per window or tab</li>
+                            <li>It is session based and working per window or tab</li>
 
                             <li>It allows storing data for one session</li>
 
-                            <li>Allows the user to carry out a single transaction but could be carrying out multiple transactions in different windows at the same time</li>
+                            <li>It Allow the user to carry out a single transaction but could be carrying out multiple transactions in different windows at the same time</li>
                           </ul>
                         </div>
                       </div>
