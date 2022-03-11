@@ -81,7 +81,7 @@
         <!-- FAQ Section  -->
         <section class="FAQ mb-5 pb-5">
             <div class="container">
-                <h1 class="text-danger ps-3 text-center">Frequently Asked Question (FAQ) </h1>
+                <h1 class="ps-3 text-center">Frequently Asked Question (FAQ) </h1>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingOne">
@@ -110,7 +110,25 @@
                         </button>
                       </h2>
                       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                        <div class="accordion-body">
+                          <h5 class="text-success">Local Storage</h5>
+                          <ul>
+                            <li>Data is persisted when the browser session ends</li>
+                            <li>It's not sessions based, need to be deleted via JS or manually</li>
+                            <li>It allows storing data with no expiration date</li>
+                            <li>Designed for storage that spans multiple windows and it lasts beyond the current session</li>
+                          </ul>
+                          <h5 class="text-success">Session Storage</h5>
+                          <ul>
+                            <li>Data is cleared when the browser session ends</li>
+
+                            <li>It's session based and working per window or tab</li>
+
+                            <li>It allows storing data for one session</li>
+
+                            <li>Allows the user to carry out a single transaction but could be carrying out multiple transactions in different windows at the same time</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
